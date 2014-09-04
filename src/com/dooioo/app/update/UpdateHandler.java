@@ -22,7 +22,6 @@ import android.text.TextUtils;
 public final class UpdateHandler extends AsyncTask<String, Integer, UpdateInfo>
 {
 
-	// 
 	private static final String REQUEST_URL = "http://myclients.duapp.com/mysqlquery2/RemoteVersionInfo?appName=";
 
 	private Context context;
