@@ -107,6 +107,13 @@ public class UpdateUtils
 					{
 						dialog.dismiss();
 
+						if (TextUtils.isEmpty(info.apkUrl))
+						{
+							Toast.makeText(activity,
+									"Download invalid (url is null)",
+									Toast.LENGTH_LONG).show();
+							return;
+						}
 						downloadFile(activity, info.apkUrl);
 					}
 				});
